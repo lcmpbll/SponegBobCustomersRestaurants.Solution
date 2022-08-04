@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace BikiniBottomCustomers.Models
 {
   public class Restaurant

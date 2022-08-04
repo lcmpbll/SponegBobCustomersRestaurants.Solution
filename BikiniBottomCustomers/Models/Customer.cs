@@ -8,8 +8,8 @@ namespace BikiniBottomCustomers.Models
     {
       this.JoinEntities = new HashSet<CustomerRestaurant>();
     }
-    public int CustomersId { get; set; }
+    public int CustomerId { get; set; }
     public string Name { get; set; }
-    public virtual IColleection<CustomerRestaurant> JoinEntites { get; }
+    public virtual ICollection<CustomerRestaurant> JoinEntities { get; }
   }
 }
