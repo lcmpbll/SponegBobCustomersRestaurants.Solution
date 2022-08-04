@@ -4,8 +4,9 @@ namespace BikiniBottomCustomers.Models
 {
   public class BikiniBottomCustomersContext : DbContext
   {
-    public DbSet<CLassOne> ClassOne { get; set; }
-    public DbSet<ClassTwo> ClassTwo { get; set; }
+    public DbSet<Customer> Customers { get; set; }
+    public DbSet<Restaurant> Restaurants { get; set; }
+    public DbSet<CustomerRestaurant> CustomerRestaurant { get; set; }
 
     public BikiniBottomCustomersContext(DbContextOptions options) : base(options) { }
 
