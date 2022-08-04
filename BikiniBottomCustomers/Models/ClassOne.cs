@@ -1,4 +1,4 @@
-namespace ProjectName.Models
+namespace BikiniBottomCustomers.Models
 {
   public class ClassOne
   {

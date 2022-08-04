@@ -1,16 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using BikiniBottomCustomers.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProjectName.Controllers
+namespace BikiniBottomCustomers.Controllers
 {
   public class ClassTwoController : Controller
   {
-    private readonly ProjectNameContext _db;
+    private readonly BikiniBottomCustomersContext _db;
 
-    public CuisineController(ProjectNameContext db)
+    public CuisineController(BikiniBottomCustomersContext db)
     {
       _db = db;
     }

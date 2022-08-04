@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ProjectName.Models;
+using BikiniBottomCustomers.Models;
 
-namespace ProjectName
+namespace BikiniBottomCustomers
 {
   public class Startup
   {

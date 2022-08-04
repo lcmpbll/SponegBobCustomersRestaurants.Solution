@@ -1,4 +1,4 @@
-# _Project Name_
+# _Bikini Bottom Customers_
 
 #### By _Liam Campbell_
 
@@ -27,7 +27,6 @@
 ---
 ## Description
 
-_This is an MVC application that was built using C#. The purpose of this application is to allow the user to identify the best restaurants by their cuisine. When the application runs, the user can add a cuisine type. After the type is inputted using the "add" button, users can then add specific restaurants to that specific cuisine. The restaurant details support a name and description. Once the restaurant is added, it will appear under that specific cuisine list._
 
 ---
 ## Setup and Installation Requirements
@@ -35,11 +34,11 @@ _This is an MVC application that was built using C#. The purpose of this applica
 <details>
 <summary><strong>Initial Setup</strong></summary>
 <ol>
-<li>Copy the git repository url: https://github.com/GarrettHays/BestRestaurants.Solution
+<li>Copy the git repository url: https://github.com/lcmpbll/SponegBobCustomersRestaurants.Solution
 <li>Open a shell program and navigate to your desktop.
 <li>Clone the repository for this project using the "git clone" command and including the copied URL.
-<li>While still in the shell program, navigate to the root directory of the newly created file named "BestRestaurants.Solution".
-<li>From the root directory, navigate to the "BestRestuarants" directory.
+<li>While still in the shell program, navigate to the root directory of the newly created file named "BikiniBottomCustomers.Solution".
+<li>From the root directory, navigate to the "BikiniBottomCustomers" directory.
 <li>Move onto "SQL Workbench" instructions below to re-create database necessary to run this project.
 <br>
 </details>
@@ -47,22 +46,22 @@ _This is an MVC application that was built using C#. The purpose of this applica
 <details>
 <summary><strong>SQL Workbench Configuration</strong></summary>
 <ol>
-<li>Create an appsetting.json file in the "BestRestaurants" directory of the project*  
-   <pre>BestRestaurants.Solution
-   └── BestRestaurants
+<li>Create an appsetting.json file in the "BikiniBottomCustomers" directory of the project*  
+   <pre>BikiniBottomCustomers.Solution
+   └── BikiniBottomCustomers
     └── appsetting.json</pre>
 <li> Insert the following code** : <br>
 
 <pre>{
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=best_restaurants;uid=root;pwd=[YOUR-PASSWORD-HERE];"
+    "DefaultConnection": "Server=localhost;Port=3306;database=bikini_bottom_cusomers_restaurants;uid=root;pwd=[YOUR-PASSWORD-HERE];"
   }
 }</pre>
 <small>*note: you must include your password in the code block section labeled "YOUR-PASSWORD-HERE".</small>
 <small>**note: if you plan to push this cloned project to a public-facing repository, remember to add the appsettings.json file to your .gitignore before doing so.</small>
 
 <li>Once "appsettings.json" file has been created, navigate back to SQL Workbench.
-<li>Import the database named "best_restaurants.sql" from the root directory of the project.<br><br>
+<li>Import the database named "bikini_bottom_customers_restaurants.sql" from the root directory of the project.<br><br>
 How to Import a Database:
 <ol> 
   <li>Open SQL Workbench.
@@ -70,7 +69,7 @@ How to Import a Database:
   <li>Click "Data Import/Restore".
   <li>Select the radio button "Import from Self-Contained File" and include file path to the sql file of this project you cloned to your machine.
   <li>In "Default Schema to be Imported to" click "New".
-  <li>Name the schema "best_restaurants" then click "OK".
+  <li>Name the schema "bikini_bottom_customers_restaurants" then click "OK".
   <li>Once named, switch to "Import Progress" tab and click "Start Import".
   
 </details>
@@ -78,8 +77,8 @@ How to Import a Database:
 <details>
 <summary><strong>To Run</strong></summary>
 Navigate to:  
-   <pre>BestRestaurants.Solution
-   └── <strong>BestRestaurants</strong></pre>
+   <pre>SpongeBobCustomersRestaurant.Solution
+   └── <strong>BikiniBottomCustomers</strong></pre>
 
 Run ```$ dotnet restore``` in the console.<br>
 Run ```$ dotnet run``` in the console

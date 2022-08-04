@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ProjectName.Models
+namespace BikiniBottomCustomers.Models
 {
-  public class ProjectNameContext : DbContext
+  public class BikiniBottomCustomersContext : DbContext
   {
     public DbSet<CLassOne> ClassOne { get; set; }
     public DbSet<ClassTwo> ClassTwo { get; set; }
 
-    public ProjectNameContext(DbContextOptions options) : base(options) { }
+    public BikiniBottomCustomersContext(DbContextOptions options) : base(options) { }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
