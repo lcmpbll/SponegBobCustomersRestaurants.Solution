@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@model BikiniBottomCustomers.Models.Customer
+
+<h3>New Customer</h3>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  <input type="submit" value="Register a new Customer" />
+}
+<p>@Html.ActionLink("See All Customer", "Index")</p>
