@@ -1,0 +1,14 @@
+@{
+  Layout ="_Layout";
+}
+
+@using BikiniBottomCustomers.Models
+
+<ul>
+  @foreach(Customer customer in Model)
+  {
+    <li>@Html.ActionLink($"{customer.Name}", "Details", new { id = customer.CustomerId })</li>
+  }
+</ul>
+
+<p>@Html.ActionLink("Add a new Customer", "Create")</p>

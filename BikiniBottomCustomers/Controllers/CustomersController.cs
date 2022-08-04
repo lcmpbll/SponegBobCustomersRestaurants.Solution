@@ -7,19 +7,19 @@ using System.Linq;
 
 namespace BikiniBottomCustomers.Controllers
 {
-  // public class ClassOneController : Controller
-  // {
-  //   private readonly BikiniBottomCustomersContext _db;
+  public class CustomerController : Controller
+  {
+    private readonly BikiniBottomCustomersContext _db;
 
-  //   public ClassOneController(BikiniBottomCustomersContext db)
-  //   {
-  //     _db = db;
-  //   }
+    public CustomerController(BikiniBottomCustomersContext db)
+    {
+      _db = db;
+    }
 
-  //   public ActionResult Index()
-  //   {
-  //     List<ClassOne> model = _db.ClassOnes.Include(classOne => classOne.ClassTwo).ToList();
-  //     return View(model);
-  //   }
-  // }
+    public ActionResult Index()
+    {
+      
+      return View(_db.Customers.ToList());
+    }
+  }
 }
