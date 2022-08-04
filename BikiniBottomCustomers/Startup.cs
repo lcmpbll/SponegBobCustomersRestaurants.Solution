@@ -25,7 +25,7 @@ namespace BikiniBottomCustomers
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<BestRestaurantsContext>(options => options
+        .AddDbContext<BikiniBottomCustomersContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
     }
 
